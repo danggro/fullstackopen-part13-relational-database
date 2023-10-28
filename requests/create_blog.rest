@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+    "author": "Sekarang pukul 16:40",
+    "url": "www.google.com",
+    "title": "The Rainy Days",
+    "likes": 0
+}
+
+###
+DELETE http://localhost:3001/api/blogs/3
