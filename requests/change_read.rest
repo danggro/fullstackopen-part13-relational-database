@@ -1,0 +1,6 @@
+PUT http://localhost:3001/api/readinglists/5
+Content-Type: application/json
+
+{
+    "read": false
+}

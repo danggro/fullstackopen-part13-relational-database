@@ -5,3 +5,7 @@ Content-Type: application/json
     "username": "digran@gmail.com",
     "password": "secret"
 }
+
+###
+DELETE http://localhost:3001/api/logout
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpZ3JhbkBnbWFpbC5jb20iLCJpZCI6MiwiaWF0IjoxNjk4NzIzMDE0fQ.YVmf9Q-UUkiDBjh_csVL6zN3vL9UNsCGgLqODSgAI1E

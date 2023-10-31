@@ -1,15 +1,17 @@
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpZ3JhbkBnbWFpbC5jb20iLCJpZCI6MywiaWF0IjoxNjk4NTU4NTQyfQ.txp3fNiBGoLjGM8zoaIkB_VGfc3qSB2FA93GrcoA6CA
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpZ3JhbkBnbWFpbC5jb20iLCJpZCI6MiwiaWF0IjoxNjk4NzIwMjE4fQ.aJg6YJoCXT_A24XKssEWS8Cl4jhE0q5Lnu4wvZVDsz0
 
 {
+    "author":"Lilac Saika",
     "url": "www.google.com",
-    "title": "Well Done Guys"
+    "title": "Falling Sakura",
+    "year": "2023"
 }
 
 ###
-DELETE http://localhost:3001/api/blogs/8
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpZ3JhbkBnbWFpbC5jb20iLCJpZCI6MywiaWF0IjoxNjk4NTU4NTQyfQ.txp3fNiBGoLjGM8zoaIkB_VGfc3qSB2FA93GrcoA6CA
+DELETE http://localhost:3001/api/blogs/6
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpZ3JhbkBnbWFpbC5jb20iLCJpZCI6MiwiaWF0IjoxNjk4NzIwMjE4fQ.aJg6YJoCXT_A24XKssEWS8Cl4jhE0q5Lnu4wvZVDsz0
 
 ###
 PUT http://localhost:3001/api/blogs/10
