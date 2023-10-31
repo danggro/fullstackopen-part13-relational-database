@@ -14,14 +14,16 @@ router.post('/', async (request, response) => {
   })
 
   if (user.disabled) {
-    response.status(401).json({ error: 'your account disabled by admin' })
+    return response
+      .status(401)
+      .json({ error: 'your account disabled by admin' })
   }
   const session = await UserSession.findOne({
     where: { userId: user.id },
   })
 
   if (session) {
-    response.json({ token: session.token, username: user.username })
+    return response.json({ token: session.token, username: user.username })
   }
 
   const passwordCorrect =
